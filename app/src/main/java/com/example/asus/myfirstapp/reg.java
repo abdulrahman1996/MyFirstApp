@@ -2,6 +2,8 @@
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,14 +19,78 @@ public class reg extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
+        saveBtn = (Button)findViewById(R.id.save_btn);
         //initialize edit text elements using it's id from ui
         password_et = (EditText)findViewById(R.id.passwordET);
         f_name_et = (EditText)findViewById(R.id.f_name_ET);
         l_name_et = (EditText)findViewById(R.id.l_name_ET);
         username_et = (EditText)findViewById(R.id.usernameET);
 
+       String user =(String) getIntent().getSerializableExtra("String").toString();
+        username_et .setText(user);
+        Toast.makeText(reg.this , "useername :"  + user , Toast.LENGTH_SHORT ).show();
+        username_et.setEnabled(false) ;
+        saveBtn.setEnabled(false);
+        password_et.setEnabled(false);
+
+        f_name_et.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(s!= null)
+                {
+                    f_name_et.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ok,0);
+                    l_name_et.addTextChangedListener(new TextWatcher() {
+                        @Override
+                        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                        }
+
+                        @Override
+                        public void onTextChanged(CharSequence s, int start, int before, int count) {
+                            if(s!= null) {
+                                l_name_et.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ok,0);
+
+                                password_et.setEnabled(true);
+                                saveBtn.setEnabled(true);
+                            }
+                                else
+                                {
+                                    l_name_et.setCompoundDrawablesWithIntrinsicBounds(0,0,0,0);
+                                    password_et.setEnabled(false);
+                                    saveBtn.setEnabled(false);
+                                }
+
+
+                        }
+
+                        @Override
+                        public void afterTextChanged(Editable s) {
+
+                        }
+                    });
+
+
+                }
+                else
+                {
+                    f_name_et.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.ok,0);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
         //initialize button using it's id from ui
-        saveBtn = (Button)findViewById(R.id.save_btn);
+
 
         //set a listener to save button to get all inserted data and make an insert operation "database operation"
         saveBtn.setOnClickListener(new View.OnClickListener() {

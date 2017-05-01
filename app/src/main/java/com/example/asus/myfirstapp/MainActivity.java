@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username ;
     EditText password ;
     DatabaseManger db ;
+    String Username ;
     int  coubter = 3 ;
     ArrayList<Person>  persons;
     @Override
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
-        String Username = username.getText().toString();
+         Username = username.getText().toString();
         String Password = password.getText().toString();
 
         db = new DatabaseManger(MainActivity.this);
@@ -133,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
     public void  register (View view)
     {
        Intent intent = new Intent(getApplicationContext() , reg.class);
+        Username = username.getText().toString();
+        intent.putExtra("String" ,Username);
         startActivity(intent);
     }
 
