@@ -1,10 +1,12 @@
 package com.example.asus.myfirstapp;
 
+import java.io.Serializable;
+
 /**
  * Created by Asus on 26/04/2017.
  */
 
-public class Person {
+public class Person implements Serializable {
     public  Integer id ;
     public  String firstname;
     public  String lastname;

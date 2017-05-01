@@ -59,7 +59,7 @@ public class DatabaseManger extends SQLiteOpenHelper {
                 per.firstname = cursor.getString(3);
                 per.lastname = cursor.getString(4) ;
                 per.corse1 = cursor.getString(5);
-                per.corse2 = cursor.getString(6);
+                per.corse2= cursor.getString(6);
                 per.corse3 = cursor.getString(7);
                 per.corse4 = cursor.getString(8);
                 persons.add(per);
@@ -89,14 +89,15 @@ public class DatabaseManger extends SQLiteOpenHelper {
     public void update (Person person )
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UDATE Person set" +
-                        "username = '"+ person.username +" ' " +
-                        "password = ' " + person.password + " '" +
-                        " course1 = ' " + person.corse1+ "'" +
-                       "course2 = ' " + person.corse2+ "'" +
-                        "course3 = ' " + person.corse3+ "'" +
-                        "course4 = ' " + person.corse4+ "'" +
-                        " where ID = " +person.id + ";" ;
+        String query = "UPDATE Person set " +
+                        "username = '"+ person.username +" '  ," +
+                        "password = ' " + person.password + " ' ," +
+                        " course1 = ' " + person.corse1+ "' ," +
+                       "course2 = ' " + person.corse2+ "' ," +
+                        "course3 = ' " + person.corse3+ "' ," +
+                        "course4 = ' " + person.corse4+ "' " +
+                        " where ID = " +person.id.toString() + ";" ;
+
         db.execSQL(query);
         db.close();
 

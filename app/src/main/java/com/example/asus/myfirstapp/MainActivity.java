@@ -1,11 +1,15 @@
 package com.example.asus.myfirstapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,29 +20,23 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     EditText username ;
     EditText password ;
-    Button login ;
     DatabaseManger db ;
     ArrayList<Person>  persons;
-    ArrayAdapter<String> adapter ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
         final  ArrayList<String> users = new ArrayList<String>();
         db = new DatabaseManger(MainActivity.this);
-        Person per = new Person();
-        per.username = "abdoo96";
-        per.password="12";
-        db.insert(per);
+
         ArrayList<Person> persons = new ArrayList<>();
-       persons = db.getPersons();
+        persons = db.getPersons();
          for(Person person : persons)
         {
            users.add(person.username);
         }
 
-        users.add("boda");
-        users.add("ahmed");
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -88,40 +86,40 @@ public class MainActivity extends AppCompatActivity {
 
         db = new DatabaseManger(MainActivity.this);
         persons = db.getPersons();
-        int flag = 0 ;
-
-       String pas  = "" ;
-        for(Person person :persons)
-        {
-            if (person.username.equalsIgnoreCase(Username) ||  person.password.equalsIgnoreCase(Password))
-            {
-               flag = 1 ;
+        int flag = 0;
+         Person per= new Person();
+        String pas = "";
+        for (Person person : persons) {
+            if (person.username.equalsIgnoreCase(Username) || person.password.equalsIgnoreCase(Password)) {
+                flag = 1;
                 pas = person.password;
-               break;
+                per = person ;
+                break;
             }
 
 
         }
 
 
-        if(flag == 1)
-        {
-            // omer  ,  the page should move to courses page when this condition applyed
+        if (flag == 1) {
+            Intent intent = new Intent(getApplicationContext() ,Courses.class) ;
+            intent.putExtra("Person" , per );
+            startActivity(intent);
 
             Toast.makeText(MainActivity.this, "Hello " + Username + " " + pas, Toast.LENGTH_LONG).show();
-        }
-        else
-        {
+        } else {
             Toast.makeText(MainActivity.this, " wrong password " + Username + " " + pas, Toast.LENGTH_LONG).show();
-        }
 
+        }
     }
 
     //  when user want to regester he press forget password  and should move to register layout , omer will handele this
     public void  register (View view)
     {
-        //omer
+       Intent intent = new Intent(getApplicationContext() , reg.class);
+        startActivity(intent);
     }
+
 
 
 }
