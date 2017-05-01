@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username ;
     EditText password ;
     DatabaseManger db ;
+    int  coubter = 3 ;
     ArrayList<Person>  persons;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public  void action(View view) {
+        if (coubter == 0 )
+        {
+          System.exit(0);
+        }
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
@@ -88,27 +93,38 @@ public class MainActivity extends AppCompatActivity {
         persons = db.getPersons();
         int flag = 0;
          Person per= new Person();
-        String pas = "";
+        String pas = new String() ;
         for (Person person : persons) {
-            if (person.username.equalsIgnoreCase(Username) || person.password.equalsIgnoreCase(Password)) {
+            if (person.username.equalsIgnoreCase(Username) ) {
                 flag = 1;
-                pas = person.password;
+                if(person.password.equalsIgnoreCase(Password))
+                {
+                    pas = person.password;
+                    flag = 2 ;
+                    per = person ;
+                    break;
+                }
                 per = person ;
                 break;
             }
 
 
         }
+         if(flag ==2)
+         {
+         Intent intent = new Intent(getApplicationContext() ,Courses.class) ;
+         intent.putExtra("Person" , per );
+         startActivity(intent);
 
-
+         Toast.makeText(MainActivity.this, "Hello " + Username , Toast.LENGTH_LONG).show();
+         }
+        else
         if (flag == 1) {
-            Intent intent = new Intent(getApplicationContext() ,Courses.class) ;
-            intent.putExtra("Person" , per );
-            startActivity(intent);
-
-            Toast.makeText(MainActivity.this, "Hello " + Username + " " + pas, Toast.LENGTH_LONG).show();
+            coubter -- ;
+            //Toast.makeText(MainActivity.this, "wronge " + Username + " |" + per.password +"|"+Password, Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(MainActivity.this, " wrong password " + Username + " " + pas, Toast.LENGTH_LONG).show();
+            coubter --;
+        //    Toast.makeText(MainActivity.this, " wrong password " + Username + " " + pas, Toast.LENGTH_LONG).show();
 
         }
     }

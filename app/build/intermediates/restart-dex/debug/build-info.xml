@@ -5,22 +5,22 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="32092550736403"
+    timestamp="39462381687269"
     token="-8360867764397149742"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4304" />
+        duration="3197" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="139" />
+        duration="342" />
     <task
         name="verifier"
-        duration="2" />
+        duration="4" />
 
     <artifact
         location="C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
@@ -34,7 +34,7 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="32092550736403"
+        timestamp="39462381687269"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"

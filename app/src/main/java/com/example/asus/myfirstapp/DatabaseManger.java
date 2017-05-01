@@ -1,5 +1,6 @@
 package com.example.asus.myfirstapp;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -78,7 +79,7 @@ public class DatabaseManger extends SQLiteOpenHelper {
     {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = " INSERT INTO Person (username , password ,fname , lname , course1 , course2  , course3 , course4) " +
-                       " VALUES('" +person.username + "' ,' " + person.password + " ' , ' " +person.firstname+ " ' , ' " + person.lastname +
+                       " VALUES('" +person.username + "' ,'" + person.password + "' , ' " +person.firstname+ " ' , ' " + person.lastname +
                        " '  , ' Java ' ,' C++ ' , ' PL1 ' ,  ' cs ' ) " ;
         db.execSQL(query);
         db.close();
@@ -86,21 +87,28 @@ public class DatabaseManger extends SQLiteOpenHelper {
 
 
 
-    public void update (Person person )
+    public void  update (Person person )
     {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "UPDATE Person set " +
-                        "username = '"+ person.username +" '  ," +
-                        "password = ' " + person.password + " ' ," +
+                        "username = '"+ person.username +"'  ," +
+                        "password = '" + person.password + "' ," +
                         " course1 = ' " + person.corse1+ "' ," +
                        "course2 = ' " + person.corse2+ "' ," +
                         "course3 = ' " + person.corse3+ "' ," +
                         "course4 = ' " + person.corse4+ "' " +
-                        " where ID = " +person.id.toString() + ";" ;
-
+                        " WHERE ID = " +person.id.toString() + ";" ;
         db.execSQL(query);
         db.close();
 
+
+    }
+    public  void updteCourse (int num , int id , String course)
+    {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        String query = "update Person SET course"+ ((Integer) num).toString()+ " = ' " + course +" ' where ID = " + ((Integer) id).toString() + " ; " ;
+        db.execSQL(query);
+        db.close();
 
     }
 }

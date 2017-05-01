@@ -80,7 +80,7 @@ public class TextFragment extends Fragment {
         }
         Toast.makeText(getActivity(), "update course" + position + "  " + person.corse1.toString(), Toast.LENGTH_SHORT).show();
         DatabaseManger db = new DatabaseManger(getActivity());
-        db.update(person);
+        db.updteCourse(position ,person.id ,ua);
 
     }
 
