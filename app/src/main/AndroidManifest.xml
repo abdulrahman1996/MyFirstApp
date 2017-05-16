@@ -7,7 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/layout"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name="com.activeandroid.app.Application"
+        >
+
 
         <activity android:name=".MainActivity"
             android:windowSoftInputMode="adjustResize">
@@ -32,7 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data android:name="AA_DB_NAME" android:value="Project" />
+        <meta-data android:name="AA_DB_VERSION" android:value="5" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="models.Account , models.Task , models.System" />
 
     </application>
 
