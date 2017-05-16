@@ -27,19 +27,18 @@ B-> show all Employer
 C-> add admin 
 
 -----------------------------------------------------------------------------------------------
-ÇÓÊÎÏãæ ÇáİÇäßÔä Çááí ÇäÇ ÚÇãáåÇ 
-áæ ÍÇÌå ãÔ ÔÛÇáå  Şæáæáí ÇÙÈØåÇ 
+use my function tha i created , any problem face you tell me 
  ----------------------------
 
 tasks 
-1- omer -> show all tasks in employer  İÑÇÌãäÊ 
-        -> create task İÑÇÌãäÊ
- 2- rabe3 -> show my tasks İÑÇÌãäÊ
-          -> show task Ïí ãÎÊáİå Úä Çááí ÚäÏ ÚãÑ    ---------- İÑÇÌãäÊ
- 3-anabob -> show all Employer  İÑÇÌãäÊ
-          -> show all freelancer İÑÇÌãäÊ
- 4-abdelsalam ->add admin İÑÇÌãäÊ
- 5- taha -> show task  İÑÇÌãäÊ 
-          ->edit profile "ãÔ áÇÒã ÊÚãáåÇÇæí " ---- İÑÇÌãäÊ
- 6- yaser -> register ÇßÊİÊí
+1- omer -> show all tasks in employer  fragment
+        -> create task fragment
+ 2- rabe3 -> show my tasks fragment
+          -> show task     ---------- fragment
+ 3-anabob -> show all Employer  fragment
+          -> show all freelancer fragment
+ 4-abdelsalam ->add admin fragment
+ 5- taha -> show task  fragment
+          ->edit profile "fragment
+ 6- yaser -> register 
 
