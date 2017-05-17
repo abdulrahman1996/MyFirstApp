@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
     <string name="layout"> login</string>
+    <string name="Employer">Employer</string>
+    <string name="Freelancer">Freelancer</string>
+    <string name="showAllTask" >show all task</string>
+    <string name="creareTask" >create task</string>
+    <string name="editProfile" >edit profile</string>
+    <string name="open" >Open</string>
+    <string name="close">Close</string>
+    <string name="showAllfreelancer">show all freelancer</string>
+    <string name="showAllEmployer"> show All Employer</string>
+    <string name="showSystemInfo">show System info</string>
+    <string name="showMyTasks"> show my tasks</string>
+    <string name="showTasks">show tasks</string>
+
+
+
+
+
 </resources>

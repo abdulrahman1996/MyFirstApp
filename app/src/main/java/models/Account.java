@@ -7,6 +7,7 @@ import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Select;
 
+import java.io.Serializable;
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ import java.util.Locale;
  * Created by Asus on 16/05/2017.
  */
 @Table (name = "accounts")
-public class Account extends Model {
+public class Account extends Model  implements Serializable{
     @Column (name ="username")
     public  String username ;
     @Column (name = "fname")
@@ -67,8 +68,23 @@ public class Account extends Model {
         task.save();
 
     }
+  // show request  in task
+    public List<Account> showRequest(Task task)
+    {
+        List<taskRequest> taskRequests = new Select().from(taskRequest.class).where("taskId = ?"  , task.getId()).execute();
+        List<Account> freelancerRequest = new ArrayList<>();
+        for(taskRequest tr :taskRequests)
+        {
+         freelancerRequest.add(getFreelacerById(tr.freelancerId));
+        }
+        return  freelancerRequest;
+    }
 
 
+private Account getFreelacerById(long id)
+{
+    return new Select().from(Account.class).where("accounts = ? " , id).executeSingle();
+}
 //////// freelancer functions ////////////
    // this for freelancer account
     public  void chooseTask(Account account , Task task)
@@ -85,7 +101,7 @@ public class Account extends Model {
 
 
     // fot freelancer
-    public List<Task> getFreelancerRunningTask(Account freelancer)
+    public List<Task> showMyTasks(Account freelancer)
     {
         return  new Select().from(Task.class).where(" freelancerId = ? " ,freelancer.getId()).execute();
     }
@@ -129,6 +145,30 @@ public class Account extends Model {
     }
 
 
+    /////////////
+ public  boolean isUsernamefound(String username) {
+     Account acc = new Select().from(Account.class).where("username = ?" , username).executeSingle();
+     if(acc!= null)
+     {
+         return  false;
+     }
+     else
+     return  true;
+ }
+
+
+public boolean save(Account account)
+{
+  Account acc = new Select().from(Account.class).where("username = ?" , account.username).executeSingle();
+  if(acc!= null)
+  {
+     return  false;
+  }
+  else
+      account.save();
+
+    return  true;
+}
 
 
 

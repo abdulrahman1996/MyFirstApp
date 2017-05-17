@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation_menu_admin.xml",
+        "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\menu\\navigation_menu_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navidation_menue.xml",
+        "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\menu\\navidation_menue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navidation_menue_employer.xml",
+        "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\menu\\navidation_menue_employer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation_menue_freelancer.xml",
+        "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\menu\\navigation_menue_freelancer.xml"
+    }
+]

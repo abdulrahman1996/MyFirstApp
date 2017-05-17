@@ -68,7 +68,7 @@
         android:width="300dp"
         android:layout_height="33dp"
         android:height="3dp"
-        android:text="forget password"
+        android:text="register"
         android:textAllCaps="false"
         android:background="@color/background"
         android:gravity="center"

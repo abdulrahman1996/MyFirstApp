@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.2.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.2.0\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "C:\\Users\\Asus\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
     },

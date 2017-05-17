@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/showAllTask"
+    android:title="@string/showAllTask" >
+
+</item>
+    <item android:id="@+id/create_task"
+        android:title="@string/creareTask" >
+
+    </item>
+
+    <item android:id="@+id/editProfile"
+        android:title="@string/editProfile" >
+
+    </item>
+
+</menu>
