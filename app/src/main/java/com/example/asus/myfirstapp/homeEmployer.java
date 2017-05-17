@@ -23,7 +23,7 @@ public class homeEmployer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_admin);
+        setContentView(R.layout.home_employer);
 
 //
 //        dreDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);

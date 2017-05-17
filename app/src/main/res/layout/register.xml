@@ -113,12 +113,13 @@
         <RadioButton android:id="@+id/employer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Freelancer"
+            android:text="@string/Employer"
             android:onClick="onRadioButtonClicked"/>
+
         <RadioButton android:id="@+id/freelancer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Employer"
+            android:text="@string/Freelancer"
             android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
 

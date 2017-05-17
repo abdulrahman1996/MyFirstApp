@@ -22,18 +22,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".reg">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
-        <activity android:name=".Courses">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".homeAdmin">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".homeEmployer">
+
+        </activity>
+        <activity android:name=".homeFreelancer">
+
         </activity>
         <meta-data android:name="AA_DB_NAME" android:value="Project" />
         <meta-data android:name="AA_DB_VERSION" android:value="5" />

@@ -22,7 +22,7 @@ public class homeFreelancer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_admin);
+        setContentView(R.layout.home_freelancer);
 
 
         dreDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);

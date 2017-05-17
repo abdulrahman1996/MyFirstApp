@@ -71,12 +71,18 @@ import models.Account;
                 case R.id.employer:
                     if (checked)
                     {
+
                         acc.roleId = 1;
+                        Toast.makeText(reg.this, "role " +acc.roleId , Toast.LENGTH_SHORT).show();
+
                     }
                         break;
                 case R.id.freelancer :
-                    if (checked)
-                        acc.roleId = 2 ;
+                    if (checked) {
+
+                        acc.roleId = 2;
+                        Toast.makeText(reg.this, "role " +acc.roleId , Toast.LENGTH_SHORT).show();
+                    }
                         break;
             }
         }
@@ -91,6 +97,7 @@ import models.Account;
          acc.fnmae = f_name_et.getText().toString();
          acc.lname = l_name_et.getText().toString();
          acc.password = password_et.getText().toString();
+
          account.save(acc);
      }
 

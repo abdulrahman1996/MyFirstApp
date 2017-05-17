@@ -25,18 +25,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.asus.myfirstapp.reg" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.example.asus.myfirstapp.Courses" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.example.asus.myfirstapp.homeAdmin" >
+        </activity>
+        <activity android:name="com.example.asus.myfirstapp.homeEmployer" >
+        </activity>
+        <activity android:name="com.example.asus.myfirstapp.homeFreelancer" >
         </activity>
 
         <meta-data

@@ -96,13 +96,16 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
 
          Username = username.getText().toString();
+
          String Password = password.getText().toString();
         Account cheker = new Account();
          if(cheker.getAccount(username.getText().toString() ,password.getText().toString()) !=null)
          {
              Account account = cheker.getAccount(username.getText().toString() ,password.getText().toString());
+             Toast.makeText(MainActivity.this, "role " +account.roleId , Toast.LENGTH_SHORT).show();
              if(account.roleId == 0)
              {
+
                Intent intent = new Intent(getApplicationContext() , homeAdmin.class)  ;
                  intent.putExtra("Account" , account);
                  startActivity(intent);

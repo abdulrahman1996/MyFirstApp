@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidMa
 		INJECTED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:5:5-44:19
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.android.support:design:25.2.0] C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\AndroidManifest.xml:22:5-20
@@ -55,31 +55,39 @@ ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.example.asus.myfirstapp.reg
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:24:9-30:20
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:24:9-26:20
 	android:name
 		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:24:19-38
-activity#com.example.asus.myfirstapp.Courses
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:31:9-37:20
+activity#com.example.asus.myfirstapp.homeAdmin
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:27:9-29:20
 	android:name
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:31:19-42
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:27:19-44
+activity#com.example.asus.myfirstapp.homeEmployer
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:30:9-32:20
+	android:name
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:30:19-47
+activity#com.example.asus.myfirstapp.homeFreelancer
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:33:9-35:20
+	android:name
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:33:19-49
 meta-data#AA_DB_NAME
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:38:9-72
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:36:9-72
 	android:value
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:38:46-69
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:36:46-69
 	android:name
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:38:20-45
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:36:20-45
 meta-data#AA_DB_VERSION
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:39:9-69
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:37:9-69
 	android:value
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:39:49-66
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:37:49-66
 	android:name
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:39:20-48
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:37:20-48
 meta-data#AA_MODELS
-ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:40:9-42:76
+ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:38:9-40:76
 	android:value
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:42:13-73
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:40:13-73
 	android:name
-		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml:39:13-37
 uses-sdk
 INJECTED from C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.2.0] C:\Users\Asus\AndroidStudioProjects\MyFirstApp\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\AndroidManifest.xml:21:5-23:62
